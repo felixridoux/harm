@@ -63,8 +63,10 @@ std::vector<AssertionPtr> Qualifier::patchDiscardAssertions(
     const TemporalExpressionPtr &con =
         a->_formula->getItems()[0]->getItems()[1];
 
-    if (temp2String(ant, Language::SpotLTL, PrintMode::ShowAll) ==
-        temp2String(con, Language::SpotLTL, PrintMode::ShowAll)) {
+    auto ant_string = temp2String(ant, Language::SpotLTL, PrintMode::ShowAll);
+    auto con_string = temp2String(con, Language::SpotLTL, PrintMode::ShowAll);
+
+    if (ant_string == con_string || "(" + ant_string + ")" == con_string) {
       discard_count++;
       continue;
     }
