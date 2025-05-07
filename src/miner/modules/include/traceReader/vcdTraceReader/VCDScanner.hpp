@@ -2,9 +2,9 @@
 #define VCDParserHEADER_H 1
 #define VCDParserIN_HEADER 1
 
-#line 6 "../../../../include/traceReader/vcdTraceReader//VCDScanner.hpp"
+#line 5 "../../../../include/traceReader/vcdTraceReader//VCDScanner.hpp"
 
-#line 8 "../../../../include/traceReader/vcdTraceReader//VCDScanner.hpp"
+#line 7 "../../../../include/traceReader/vcdTraceReader//VCDScanner.hpp"
 
 #define  YY_INT_ALIGNED short int
 
@@ -828,6 +828,6 @@ extern int yylex (void);
 #line 399 "flex_bison_src/VCDScanner.l"
 
 
-#line 832 "../../../../include/traceReader/vcdTraceReader//VCDScanner.hpp"
+#line 831 "../../../../include/traceReader/vcdTraceReader//VCDScanner.hpp"
 #undef VCDParserIN_HEADER
 #endif /* VCDParserHEADER_H */

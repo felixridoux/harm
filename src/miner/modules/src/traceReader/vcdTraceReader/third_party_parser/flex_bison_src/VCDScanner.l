@@ -81,7 +81,7 @@ DECIMAL_NUM         [0-9]+
 
 COMMENT_TEXT        [^("$")]*
 DATE_TEXT           {COMMENT_TEXT}
-VERSION_TEXT        {COMMENT_TEXT}
+VERSION_TEXT        [^"$"]*
 
 %x IN_COMMENT
 %x IN_DATE
